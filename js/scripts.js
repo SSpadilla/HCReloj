@@ -20,7 +20,6 @@ menu.addEventListener('click', (e) => {
 
 window.addEventListener('scroll', (e) => {
     let change = document.getElementById("servicios");
-    ("menu-container");
     if ((menuContainer.getBoundingClientRect().top + e.pageY) >= (change.getBoundingClientRect().top + e.pageY)) {
         menuContainer
             .classList
@@ -31,4 +30,3 @@ window.addEventListener('scroll', (e) => {
             .remove("invert")
     }
 });
-
